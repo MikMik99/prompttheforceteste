@@ -1,0 +1,93 @@
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #121212;
+    color: white;
+}
+
+#app {
+    max-width: 600px;
+    margin: auto;
+}
+
+#prompt-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#send-prompt {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #5C6BC0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-sizing: border-box; /* Ensure padding doesn't change size */
+    vertical-align: middle; /* Align text and emoji */
+}
+
+#send-prompt:hover {
+    background-color: #7986CB;
+}
+
+#active-prompt-container {
+    margin-top: 20px;
+    position: relative;
+    height: 50px;
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#active-prompt {
+    font-size: 18px;
+    color: #DDD;
+    position: relative; /* Ensure text is contained */
+    white-space: nowrap; /* Avoid text wrapping */
+    overflow: hidden; /* Hide text going out of bounds */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+}
+
+#timer {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #BBB;
+}
+
+#timer-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #5C6BC0;
+    transition: width 0.1s linear;
+}
+
+#prompt-list {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#prompt-list li {
+    padding: 8px;
+    background-color: #333;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all 0.3s;
+}

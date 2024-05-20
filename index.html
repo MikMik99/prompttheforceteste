@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Prompt System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" id="prompt-input" placeholder="Digite seu prompt aqui" />
+        <button id="send-prompt">Enviar Prompt</button>
+
+        <div id="active-prompt-container">
+            <div id="active-prompt"></div>
+            <div id="timer"></div>
+            <div id="timer-bar"></div>
+        </div>
+
+        <ul id="prompt-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
